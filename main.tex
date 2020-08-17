@@ -1,0 +1,84 @@
+\documentclass[oneside]{book}
+
+%%%%%%%%%%%%%%%
+%Begin preamble
+%%%%%%%%%%%%%%%
+
+\usepackage[british]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[
+    backend=biber,
+    sorting=ynt,
+    sortcites=true,
+    citestyle=reading,
+    hyperref=false,
+    backref=false,
+    isbn=true
+]{biblatex}
+
+%Add bibliography
+\addbibresource{bibliography.bib}
+
+%Set front page information
+\title{The Philosophy of Reason}
+\author{Fatimi, Sayed Hamid}
+\date{}
+
+%Set Table of Contents to only show Chapters
+\setcounter{tocdepth}{0}
+
+%Define postulate
+\newtheorem{postulate}{Postulate}
+
+%%%%%%%%%%%%%%%
+%%%End preamble
+%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    \maketitle{}
+
+    \frontmatter{}
+    \tableofcontents{}
+
+    \mainmatter{}
+
+    %Chapter 1
+    \input{Chapters/TheOriginsOfReasoning}
+
+
+    %Chapter 2
+    \input{Chapters/AxiomsOfReason}
+
+
+    %Chapter 3
+    \input{Chapters/ConsciousnessAndReasoning}
+
+
+    %Chapter 4
+    \input{Chapters/InvarianceOfReasoning}
+
+
+    %Chapter 5
+    \input{Chapters/LogicalMethodsOfReasoning}
+
+
+    %Chapter 6
+    \input{Chapters/ReasoningvsLogic}
+
+
+    %Chapter 7
+    \input{Chapters/TimeAndCausality}
+
+
+    %Chapter 8
+    \input{Chapters/ActionableReasoning}
+
+
+    \backmatter{}
+    \printbibliography{}
+
+\end{document}
